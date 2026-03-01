@@ -32,7 +32,7 @@ module RubyUI
         File.exist?(Rails.root.join("config/importmap.rb")) && File.exist?(Rails.root.join("bin/importmap"))
       end
 
-      def using_bun? = File.exist?(Rails.root.join("bun.lock"))
+      def using_bun? = File.exist?(Rails.root.join("bun.lock")) || File.exist?(Rails.root.join("bun.lock"))
 
       def using_npm? = File.exist?(Rails.root.join("package-lock.json"))
 
